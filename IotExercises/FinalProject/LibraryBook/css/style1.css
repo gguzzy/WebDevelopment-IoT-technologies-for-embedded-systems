@@ -1,0 +1,23 @@
+body {
+	}
+
+h1 {
+    	font-family: "Lucida Console", Monaco, monospace;
+		color: #333333;
+		text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(191,3,0,0);
+}
+
+p {
+		font-family: verdana;
+		color: #CF153A;
+		text-shadow: #000000 1px 1px 0;
+  		font-size: 20px;
+}
+
+html { 
+  background: url(img/03.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

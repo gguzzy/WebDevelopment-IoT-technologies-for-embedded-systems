@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+          <center>
+          <head>
+              <title>LibraryBOOK</title>
+              <link href="css/style1.css" rel="stylesheet">
+          </head>
+              
+          <body onload="script();">
+              <h1>LibraryBook:</h1>
+              
+              <p>Read a book and go through the silence, deeply focused: a seat in your favorite place, safely!</p>
+                <img src="css/img/01.png" style="width: 200px; height: 150px;"></img>
+                  <!-- Register a new user -->
+              <p id="register">
+              </p>
+              <script>
+				var in_name = window.prompt("In order to register enter your name: ");
+				alert("Be aware that "+this.name+"cannot be changed. [or try to refresh to try a new booking)");
+				var myObject = {{
+				  name:in_name,
+				  id: 1010,
+				  booking: function() {{
+				    return this.id + " " + this.name;
+				  }}}}
+				document.getElementById("register").innerHTML = myObject.booking(); 
+			  </script>   
+			  <p>Current library: {empty_seats}, booking condition: {condition}</p>
+              <!-- List selection -->
+              <form action="/action_page.php">
+              <label for="cars">Choose a book:</label>
+                <select name="books" id="books">
+                    <optgroup label="Internet">
+                      <option value="1933988746">Flex 3 in Action</option>
+                      <option value="1933988312">Collective Intelligence in Action</option>
+                    </optgroup>
+                  
+                    <optgroup label="Java">
+                      <option value="193518217X">OSGi in Depth</option>
+                      <option value="1935182234">Griffon in Action</option>
+                    </optgroup>
+        
+                  </select>
+              </form>
+              <input type="submit" value="Submit">
+            
+              <p>Temperature ambient: {temperature} &#186C</p>
+              <p id='people'>Number of people in the room: {n_people}/{max_people} [max capacity]</p>  
+         </body>
+         </center>
+       </html>
