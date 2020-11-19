@@ -1,4 +1,4 @@
-# Python3
+# WebDevelopment-IoT-technologies-for-embedded-systems
 Collection of problem solving exercises using Python 3.
 
 Each exercise try to analyze different problems, different approaches to the same problem, and different ranges.
